@@ -81,13 +81,29 @@ extension ViewController : UICollectionViewDataSource {
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let item = collectionView.dequeueReusableCell(withReuseIdentifier: VideoCollectionViewCell.identifer, for: indexPath) as! VideoCollectionViewCell
+    setCellClousers(item: item)
     
     let model = data[indexPath.item]
     item.configure(with: model)
     return item
   }
   
+  // MARK: - Cell CLousers
   
+  private func setCellClousers(item: VideoCollectionViewCell) {
+    item.didTapShareButton = {[weak self] model in
+      print("Share")
+    }
+    item.didTapCommentButton = {[weak self] model in
+         print("Comment")
+       }
+    item.didTapProfileButton = {[weak self] model in
+         print("Profile")
+       }
+    item.didTapLikeButton = {[weak self] model in
+      print("Like")
+    }
+  }
   
   
 }
