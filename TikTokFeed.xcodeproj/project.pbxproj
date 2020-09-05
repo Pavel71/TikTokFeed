@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0530322A2503831B00D585B1 /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 053032292503831B00D585B1 /* test.mp4 */; };
+		0530322D250384A800D585B1 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0530322C250384A800D585B1 /* UIView+Layout.swift */; };
+		0530322F2503855A00D585B1 /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0530322E2503855A00D585B1 /* VideoCollectionViewCell.swift */; };
 		056097EE25037DAF00E7AD7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056097ED25037DAF00E7AD7C /* AppDelegate.swift */; };
 		056097F225037DAF00E7AD7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056097F125037DAF00E7AD7C /* ViewController.swift */; };
 		056097F725037DB400E7AD7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 056097F625037DB400E7AD7C /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		053032292503831B00D585B1 /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
+		0530322C250384A800D585B1 /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		0530322E2503855A00D585B1 /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
 		056097EA25037DAF00E7AD7C /* TikTokFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikTokFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		056097ED25037DAF00E7AD7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		056097F125037DAF00E7AD7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +50,14 @@
 			path = SupportFiles;
 			sourceTree = "<group>";
 		};
+		0530322B2503849B00D585B1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0530322C250384A800D585B1 /* UIView+Layout.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		056097E125037DAF00E7AD7C = {
 			isa = PBXGroup;
 			children = (
@@ -63,8 +77,11 @@
 		056097EC25037DAF00E7AD7C /* TikTokFeed */ = {
 			isa = PBXGroup;
 			children = (
+				0530322B2503849B00D585B1 /* Extensions */,
+				053032292503831B00D585B1 /* test.mp4 */,
 				0530322825037E0700D585B1 /* SupportFiles */,
 				056097F125037DAF00E7AD7C /* ViewController.swift */,
+				0530322E2503855A00D585B1 /* VideoCollectionViewCell.swift */,
 			);
 			path = TikTokFeed;
 			sourceTree = "<group>";
@@ -128,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				056097FA25037DB400E7AD7C /* LaunchScreen.storyboard in Resources */,
+				0530322A2503831B00D585B1 /* test.mp4 in Resources */,
 				056097F725037DB400E7AD7C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +159,8 @@
 			files = (
 				056097F225037DAF00E7AD7C /* ViewController.swift in Sources */,
 				056097EE25037DAF00E7AD7C /* AppDelegate.swift in Sources */,
+				0530322F2503855A00D585B1 /* VideoCollectionViewCell.swift in Sources */,
+				0530322D250384A800D585B1 /* UIView+Layout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
