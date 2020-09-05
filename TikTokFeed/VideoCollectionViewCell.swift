@@ -162,8 +162,7 @@ class VideoCollectionViewCell: UICollectionViewCell {
     contentView.addSubview(buttonStack)
     buttonStack.anchor(top: nil, leading: nil, bottom: labelsStack.topAnchor, trailing: contentView.trailingAnchor,padding: .init(top: 0, left: 0, bottom: 10, right: 10))
     buttonStack.constrainHeight(constant: contentView.frame.size.height / 2)
-//    buttonStack.constrainWidth(constant: contentView.frame.size.width / 5)
-//    buttonStack.centerYInSuperview()
+
   }
   
   // MARK: - Prepare For Reuse
@@ -178,8 +177,9 @@ class VideoCollectionViewCell: UICollectionViewCell {
   // MARK: - Confure
   func configure(with model: VideoModel) {
     self.model = model
-    confureVideo(model: self.model)
     
+    confureVideo(model: self.model)
+
     captionLabel.text  = model.caption
     userNameLabel.text = model.userName
     audioLabel.text    = model.audioTrackName

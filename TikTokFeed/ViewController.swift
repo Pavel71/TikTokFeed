@@ -29,9 +29,11 @@ class ViewController: UIViewController {
     
     layout.scrollDirection  = .vertical
     layout.itemSize         = .init(width: view.frame.size.width, height: view.frame.size.height)
+    layout.minimumLineSpacing = 0
     layout.sectionInset     = .init(top: 0, left: 0, bottom: 0, right: 0 )
     
     let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+    
     collectionView.backgroundColor = .black
     collectionView.isPagingEnabled = true
     collectionView.dataSource = self
